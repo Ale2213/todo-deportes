@@ -1,0 +1,140 @@
+/* Reset General */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #000428, #004e92);
+    color: white;
+    text-align: center;
+    transition: background 0.5s, color 0.5s;
+}
+
+/* Navegación */
+.navbar {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.navbar a:hover {
+    color: #00d2ff;
+}
+
+#darkModeToggle {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+#darkModeToggle:hover {
+    color: #00d2ff;
+}
+
+/* Encabezado */
+header .logo {
+    width: 120px;
+    margin: 20px auto;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+/* Banner */
+.banner {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+/* Temas */
+.temas-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.temas-grid div {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 15px;
+    transition: transform 0.3s ease;
+}
+
+.temas-grid div:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.temas-grid img {
+    width: 150px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+/* Formulario de Contacto */
+.contacto form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.contacto input, .contacto textarea {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.contacto button {
+    padding: 10px;
+    background-color: #00d2ff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contacto button:hover {
+    background-color: #0076a3;
+}
+
+/* Footer */
+footer {
+    background: #222;
+    padding: 10px;
+}
+
+/* Modo Oscuro */
+body.dark-mode {
+    background: #121212;
+    color: #ddd;
+}
